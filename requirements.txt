@@ -1,5 +1,5 @@
 pydantic==2.4.2
-typing_extensions==4.8.0
+typing_extensions==4.7.1
 fastapi==0.103.2
 fastapi-login==1.9.1
 fastapi-sso==0.7.2
