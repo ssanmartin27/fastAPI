@@ -2,10 +2,10 @@ from __future__ import annotations
 from typing import Any
 
 class Despacho():
-    def __init__ (self) -> None:
-        self.rules = []
-        self.schedules = []
-        self.routes = []
+    def __init__ (self, rules: list[str] = [], schedules: list[str] = [], routes: list[str] = []) -> None:
+        self.rules = rules
+        self.schedules = schedules
+        self.routes = routes
 
     def addRule(self, rule: Any) -> None:
         self.rules.append(rule)

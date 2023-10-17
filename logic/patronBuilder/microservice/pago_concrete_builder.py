@@ -3,10 +3,10 @@ from typing import Any
 from logic.patronMemento import * 
 
 class Pago:
-    def __init__ (self) -> None:
-        self.rules = []
-        self.schedules = []
-        self.routes = []
+    def __init__ (self, rules: list[str] = [], schedules: list[str] = [], routes: list[str] = []) -> None:
+        self.rules = rules
+        self.schedules = schedules
+        self.routes = routes
 
     def addRule(self, rule: Any) -> None:
         self.rules.append(rule)

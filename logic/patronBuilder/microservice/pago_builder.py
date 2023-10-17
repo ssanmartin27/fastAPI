@@ -10,7 +10,7 @@ class PagoBuilder (MicroserviceBuilder):
     
     def reset(self):
         """Reseta el Pago"""
-        self._Pago = Pago()
+        self._Pago = Pago([],[],[])
 
     def configRules(self, rule = 'Rule') -> None:
         self._Pago.addRule(rule)
@@ -21,7 +21,6 @@ class PagoBuilder (MicroserviceBuilder):
     def configRoutes(self, route = 'routes') -> None:
         self._Pago.addRoutes(route)
 
-    @property
     def getMicroservice(self) -> Pago:
         """Obtiene el microservicio del Pago"""
         Pago = self._Pago

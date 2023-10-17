@@ -10,7 +10,7 @@ class DespachoBuilder(MicroserviceBuilder):
     
     def reset(self):
         """Reseta el despacho"""
-        self._despacho = Despacho()
+        self._despacho = Despacho([],[],[])
 
     def configRules(self, rule='Rule') -> None:
         if not self._despacho:
