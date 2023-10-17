@@ -1,7 +1,7 @@
 pydantic==2.4.2
 typing_extensions==4.7.1
 fastapi==0.103.2
-fastapi-login==1.9.1
+fastapi-login==1.8.2
 fastapi-sso==0.7.2
 passlib==1.7.4
 python-jose==3.3.0
